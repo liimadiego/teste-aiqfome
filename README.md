@@ -13,4 +13,9 @@ Rode ~ npx prisma migrate dev<br>
 Para fazer o build do projeto, rode ~ npm run build
 <br>
 Por fim inicie a API com:<br>
-~ npm run start<br>
+~ npm run start<br><br>
+
+Para acessar a documentação Swagger, acesse http://localhost:3000/api-docs<br>
+A Api está em http://localhost:3000/api/<br><br>
+
+Criei também um arquivo com a collection Insomnia do projeto, se encontra na base do projeto com o nome aiqfome_collection_insomnia.yaml
