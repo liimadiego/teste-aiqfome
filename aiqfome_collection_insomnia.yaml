@@ -1,0 +1,381 @@
+type: collection.insomnia.rest/5.0
+name: aiqfome
+meta:
+  id: wrk_8d0bfad3e8974692a7eacfab49b3c6cc
+  created: 1752528649581
+  modified: 1752528649581
+  description: ""
+collection:
+  - name: Profile
+    meta:
+      id: fld_b1888d2502e4479ea2d015f060c6fa2d
+      created: 1752529188017
+      modified: 1752529331281
+      sortKey: -1752529188017
+      description: ""
+    children:
+      - url: http://localhost:3000/api/profile
+        name: Get Profile
+        meta:
+          id: req_5594cc4adce041e587c58b11ff817d51
+          created: 1752528949075
+          modified: 1752697811917
+          isPrivate: false
+          description: ""
+          sortKey: -1752529205431
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/profile
+        name: Update Profile
+        meta:
+          id: req_17c449afc9d64f6f8064daf345d744dd
+          created: 1752529000285
+          modified: 1752697823444
+          isPrivate: false
+          description: ""
+          sortKey: -1752529205231
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Gabizela"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/profile
+        name: Delete Profile
+        meta:
+          id: req_26c140226a11458e8d7a80952f02a756
+          created: 1752529078168
+          modified: 1752697829730
+          isPrivate: false
+          description: ""
+          sortKey: -1752529205331
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Products
+    meta:
+      id: fld_1005ff9af88c404d921a196e507f2182
+      created: 1752529241814
+      modified: 1752529241814
+      sortKey: -1752529241814
+      description: ""
+    children:
+      - url: http://localhost:3000/api/products
+        name: Get Products
+        meta:
+          id: req_544912eb5a86416ab08c018ad67c1967
+          created: 1752529174911
+          modified: 1752697788291
+          isPrivate: false
+          description: ""
+          sortKey: -1752529246468
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/products/2
+        name: Get Product By Id
+        meta:
+          id: req_96967f994f8842eba796278b9b63149b
+          created: 1752529267187
+          modified: 1752697799854
+          isPrivate: false
+          description: ""
+          sortKey: -1752529225899.5
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Favorites
+    meta:
+      id: fld_186f7370e7f54291adf784611cc038d9
+      created: 1752529287498
+      modified: 1752529287498
+      sortKey: -1752529287498
+      description: ""
+    children:
+      - url: http://localhost:3000/api/favorites
+        name: Get Favorites
+        meta:
+          id: req_8c8a7ca4f21e4d08bd7b39fb0d32827c
+          created: 1752529324468
+          modified: 1752697748950
+          isPrivate: false
+          description: ""
+          sortKey: -1752529496885
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Gabizela"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/favorites
+        name: Add Favorite
+        meta:
+          id: req_d5399aeb14e149a587f88d2583215256
+          created: 1752529514546
+          modified: 1752697759057
+          isPrivate: false
+          description: ""
+          sortKey: -1752529371676.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"productId": 3
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/favorites/3
+        name: Remove Favorite
+        meta:
+          id: req_1e1b9ecccd8449e7b1c8c9ae9a92d73e
+          created: 1752529623010
+          modified: 1752697771785
+          isPrivate: false
+          description: ""
+          sortKey: -1752529309072.25
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_d0c114ddf7fa4ce2819ae2fb07fd0b3b
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_24d58a9d64004e00809490e062b87112
+          - id: pair_fcf15dffb6b54fe6bff094b8ec85511a
+            name: Authorization
+            value: Bearer {{token}}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - url: http://localhost:3000/api/register
+    name: Register
+    meta:
+      id: req_9cc98bab19fc4c628d0723416738c227
+      created: 1752528654908
+      modified: 1752697412754
+      isPrivate: false
+      description: ""
+      sortKey: -1752528654908
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "diego lima",
+        	"email": "diegolima1.sao@gmail.com",
+        	"password": "123456"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/login
+    name: Login
+    meta:
+      id: req_e9165d2fa2ca477bb9c85791b8a085e5
+      created: 1752528850131
+      modified: 1752697420320
+      isPrivate: false
+      description: ""
+      sortKey: -1751241124004
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "diegolima1.sao@gmail.com",
+        	"password": "123456"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3793247c4cc23f0d715e64f3429fa7f6cc99caa1
+    created: 1752528649589
+    modified: 1752528649589
+environments:
+  name: Base Environment
+  meta:
+    id: env_3793247c4cc23f0d715e64f3429fa7f6cc99caa1
+    created: 1752528649586
+    modified: 1752697735642
+    isPrivate: false
+  data:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdiMGNhYjM5LWQ5ZjItNDhjYS05MzhiLWFhYmEyYjM3NGQ5YiIsImVtYWlsIjoiZGllZ29saW1hMS5zYW9AZ21haWwuY29tIiwiaWF0IjoxNzUyNjk3NDIxLCJleHAiOjE3NTMzMDIyMjF9.IXBsq-i8EMpTzKy4AuJihBsKlDE9uCrqstmGBIJU_xU
