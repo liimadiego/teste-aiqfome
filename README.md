@@ -6,7 +6,7 @@
 
 ## Para iniciar o projeto
 
-Criar um arquivo .env e preencher os dados (JWT_SECRET, DATABASE_URL e PORT).<br><br>
+Copie o arquivo .env.example e cole em um novo arquivo chamado .env, altere os dados (JWT_SECRET, DATABASE_URL e PORT) com os que preferir.<br><br>
 Rode ~ npx prisma migrate dev<br>
 (para montar as tabelas no banco de dados PostgreSQL)<br>
 <br>
